@@ -109,38 +109,38 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 /*downloadCV*/
-   function downloadCV() {
-     // Replace 'path/to/your/cv.pdf' with the actual link to your CV file
-     var cvUrl =
-       "https://drive.google.com/file/d/1WIRl1Uv0nnEAoTAP3JD1-6Zf14eqSQAB/view?usp=drivesdk";
+function downloadCV() {
+  // Replace 'path/to/your/cv.pdf' with the actual link to your CV file
+  var cvUrl =
+    "https://drive.google.com/file/d/1Pa7jHj7lpJNrnqzPeoJtRqLgNjChXNai/view?usp=sharing";
 
-     // Create a hidden link element
-     var link = document.createElement("a");
-     link.href = cvUrl;
-     link.download = "your-cv-file-name.pdf"; // Specify the desired file name
+  // Create a hidden link element
+  var link = document.createElement("a");
+  link.href = cvUrl;
+  link.download = "your-cv-file-name.pdf"; // Specify the desired file name
 
-     // Append the link to the document body
-     document.body.appendChild(link);
+  // Append the link to the document body
+  document.body.appendChild(link);
 
-     // Trigger a click on the link to start the download
-     link.click();
+  // Trigger a click on the link to start the download
+  link.click();
 
-     // Remove the link from the document
-     document.body.removeChild(link);
-   }
+  // Remove the link from the document
+  document.body.removeChild(link);
+}
 
-      var indexValue = 0;
-      function slideShow() {
-        setTimeout(slideShow, 2000);
-        var x;
-        const img = document.querySelector(".images");
-        for (x = 0; x < img.length; x++) {
-          img[x].style.display = "none";
-        }
-        indexValue++;
-        if (indexValue > img.length) {
-          indexValue = 1;
-        }
-        img[indexValue - 1].style.display = "block";
-      }
-      slideShow();
+var indexValue = 0;
+function slideShow() {
+  setTimeout(slideShow, 2000);
+  var x;
+  const img = document.querySelector(".images");
+  for (x = 0; x < img.length; x++) {
+    img[x].style.display = "none";
+  }
+  indexValue++;
+  if (indexValue > img.length) {
+    indexValue = 1;
+  }
+  img[indexValue - 1].style.display = "block";
+}
+slideShow();
