@@ -112,7 +112,8 @@ window.addEventListener("scroll", scrollActive);
 function downloadCV() {
   // Replace 'path/to/your/cv.pdf' with the actual link to your CV file
   var cvUrl =
-    "https://drive.google.com/file/d/1VorzsdoOU46UEQCBbLxBR36jKBEwfOOW/view?usp=sharing";
+    "https://drive.google.com/file/d/1u2hZXXxPXX01GSR-PUpEWSU7TnAawEpV/view?usp=sharing";
+  
 
   // Create a hidden link element
   var link = document.createElement("a");
